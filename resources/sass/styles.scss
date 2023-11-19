@@ -1,0 +1,64 @@
+input:focus {
+    box-shadow: none !important;
+}
+
+/* Adjust the size of the carousel dots */
+.carousel-container {
+    .carousel-caption-center {
+        padding: 0px;
+    }
+    .dots {
+        .dot {
+            width: 12px;
+            height: 12px;
+            margin: 5px;
+            border: 1px solid #fd7a7a;
+            background-color: transparent;
+            &.active {
+                background-color: #fd7a7a;
+            }
+        }
+    }
+}
+
+.hoverShowSlideInTop {
+    .icons-box {
+        opacity: 0;
+    }
+    &:hover {
+        .icons-box {
+            animation: SlideInTop 0.3s 0.2s forwards;
+        }
+    }
+}
+@keyframes SlideInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ant-select-show-search {
+    border-radius: 0.5rem;
+    height: 45px;
+    .ant-select-selector{
+        height: 45px !important;
+    }
+    .ant-select-selection-search {
+        height: 45px !important;
+        input {
+            padding: 0.3rem 0 !important;
+            height: 45px !important;
+        }
+    }
+    .ant-select-selection-item {
+        padding: 0.3rem 0 !important;
+    }
+    .ant-select-selection-placeholder {
+        padding: 0.3rem 0 !important;
+    }
+}
